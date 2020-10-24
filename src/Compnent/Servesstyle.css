@@ -1,0 +1,87 @@
+.bakyard{
+  background-color: gainsboro;
+  padding: 10px;
+
+}
+.bakyard h3{
+
+  padding: 3px;
+  padding-top: 6px;
+
+  letter-spacing: 4px;
+  font-size: 40px;
+  border-bottom: 5px solid rgb(192, 170, 114);
+  margin-left: 30%;
+  margin-right: 30%;
+   }
+   .icons{
+     font-size: 40px;
+     color:rgb(192, 170, 114);
+   }
+   .cols{
+     padding: 20px;
+   }
+   .cols h5{
+     padding: 20px;
+   }
+
+   .colss{
+
+     width: 100%;
+     height: 100%;
+
+
+
+   }
+   .bes{
+
+     width: 130%;
+     height: 140%;
+
+
+
+   }
+   .bess{
+     margin-left: 3%;
+
+     margin-top: 3%;
+
+   }
+
+
+   .bes:hover{
+       background: rgba(0, 0, 0);
+   }
+   .container{
+
+     width: 100%;
+     height: 100%;
+   }
+
+
+   .LUXURIOUS{
+     padding: 3px;
+     padding-top: 6px;
+
+     letter-spacing: 4px;
+     font-size: 40px;
+     border-bottom: 5px solid rgb(192, 170, 114);
+     margin-top: 40px;
+     margin-bottom:40px ;
+     margin-left: 30%;
+     margin-right: 30%;
+
+   }
+
+   .btns{
+     width: 80%;
+     background-color: rgb(192, 170, 114);
+     border-color: rgb(192, 170, 114);
+     letter-spacing: 4px;
+     font-size: xx-large;
+   }
+   .btns:hover{
+     background-color: black;
+     border-color:black
+
+   }

@@ -1,0 +1,76 @@
+.navbar{
+
+  background: rgb(211, 207, 207);
+  color: black;
+   }
+
+ .nav-link{
+  color:rgb(7, 7, 7);
+  text-decoration-line: none;
+  font-size: x-large;
+}
+.nav-link:hover {
+  color:white;
+  text-decoration-line: none;
+
+ }
+
+.imageovar{
+
+  background-image: url("../images/homimag.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: calc(100vh - 66px);
+
+
+}
+
+.imageromse{
+background-image: url("../images/room-1.jpeg");
+min-height:calc(60vh) ;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+
+
+ .container {
+
+    display: flex;
+    align-items: center;
+ }
+.child {
+padding: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+.child h1{
+  padding: 3px;
+  padding-top: 6px;
+  color:white;
+  letter-spacing: 4px;
+  font-size: 40px;
+  border-bottom: 4px solid rgb(192, 170, 114);
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.child h4{
+
+  color:white;
+  margin-top: 30px;
+  letter-spacing: 4px;
+}
+.child p{
+  margin-top: 40px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+ letter-spacing: 4px;
+  padding: 10px;
+  background-color: rgb(192, 170, 114);
+}
