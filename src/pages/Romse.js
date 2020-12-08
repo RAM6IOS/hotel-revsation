@@ -1,19 +1,34 @@
 import React, { useContext } from "react";
 import Heroroms from "../Compnent/heroroms";
-import UserContext from "./UesrContext";
+import { ditlesroom } from "../Data";
+import "../App.css"
+import {
+    BrowserRouter as Router,
+    Route,
+    Link,
+    Switch,
+    Redirect,
+    useLocation,
+} from "react-router-dom";
+import { Card, Avatar } from "antd";
+import {
+    EditOutlined,
+    EllipsisOutlined,
+    SettingOutlined,
+} from "@ant-design/icons";
+import Cards from "../Compnent/card"
+
+const { Meta } = Card;
 
 function Romse() {
-    const value = useContext(UserContext);
     return (
-        <div>
-            <Heroroms />
-            {value.map((val, index) => (
-                <div>
-                    <h3>{val.icon}</h3>
-                    <p>{val.names}</p>
-                </div>
-            ))}
-        </div>
+        <>
+            <div>
+                <Heroroms />
+            </div>
+            <Cards/>
+
+        </>
     );
 }
 

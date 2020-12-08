@@ -14,34 +14,29 @@ import {
     useLocation,
 } from "react-router-dom";
 import Navber from "./Compnent/Navber";
-import UesrContext from "./pages/UesrContext";
-import Ditel from "./Compnent/ditel";
+import  {roomname } from "./Rooms/roomnam";
 
-import Bigrooms from "./Ditels/bigrooms";
+
 
 function App() {
     return (
         <>
             <div className="App">
                 <Navber />
-                <UesrContext.Provider value={Ditel}>
-                    <Switch>
-                        <Route exact path="/" component={Home} />
-                        <Route exact path="/romse/" component={Romse} />
-                        <Route
-                            exact
-                            path="/romse/:slug"
-                            component={SinglRomse}
-                        />
-                        {Bigrooms.map((big, index) => (
-                            <Route exact path={big.bat} component={big.rooms} />
-                        ))}
-                        <Route component={Error} />
-                    </Switch>
-                </UesrContext.Provider>
+
+                <Switch>
+                    <Route exact path="/" component={Home} />
+                    <Route path="/romse/" component={Romse} />
+
+                    {roomname.map((romnames , index) => (
+                        <Route exact path={romnames.tos} component={romnames.rooms} />
+                    ))}
+                    <Route component={Error} />
+                </Switch>
             </div>
         </>
     );
 }
 
 export default App;
+//<Route component={Error} />

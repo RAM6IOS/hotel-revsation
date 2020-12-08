@@ -1,21 +1,51 @@
 import React from "react"
-import imges1 from "./images/room-13.jpeg"
-import imges2 from "./images/room-9.jpeg"
-import imges3 from "./images/room-3.jpeg"
+
+import Room17 from "./images/room16.jpg";
+import imges1 from "./images/room1.jpg"
+import imges3 from "./images/room2.jpg"
 
 
 const Ditles = [
     {
-        imgs: imges1,
-        link: "/rooms1",
+        imgs: Room17,
+        to: "/room1/ ",
+        title: "Deluxe Double or Twin Room with City View",
     },
     {
-        imgs: imges2,
-        link: "/rooms2",
+        imgs: imges1,
+        to: "/room2/ ",
+        title: "Deluxe Double or Twin Room with Sea View",
     },
     {
         imgs: imges3,
-        link:"/rooms3"
+        to: "/room3/ ",
+        title: "Ocean Suite with Swimming Pool Access",
     },
 ];
-export default Ditles
+export default Ditles;
+
+
+export const ditlesroom = [
+    {
+        imgs: Room17,
+        tittle: "Deluxe Double or Twin Room with City View",
+        tos: "/room4/ ",
+    },
+    {
+        imgs: Room17,
+        tittle: "Deluxe Double or Twin Room with City View",
+        tos: "/room5/ ",
+    },
+    {
+        imgs: Room17,
+        tittle: "Deluxe Double or Twin Room with City View",
+        tos:"/room6/ "
+    },
+    {
+        imgs: Room17,
+        tittle: "Deluxe Double or Twin Room with City View",
+    },
+];
+
+
+

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 
-
+        
 import "./Navber.css";
 
 export default function heroerror(props) {
