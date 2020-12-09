@@ -5,13 +5,10 @@ import Heroerror from "../Compnent/heroerror";
 import "../Compnent/Navber.css";
 import Serves from "../Compnent/serves.js";
 
-import { Link } from "react-router-dom";
 
 import Ditles from "../Compnent/bestRoms";
 
 function Home() {
-const [nem , setNem]= useState()
-
     return (
         <>
             <Hero></Hero>
@@ -19,7 +16,7 @@ const [nem , setNem]= useState()
 
             <Ditles />
 
-            
+
         </>
     );
 }

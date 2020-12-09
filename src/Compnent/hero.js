@@ -1,6 +1,5 @@
 import React from 'react'
-//import Deflaultbcg from "./images/room-1.jpeg ";
-//import "./ Beflaultbcg.css";
+
 import "./Navber.css";
 import Heroerror from "./heroerror";
 

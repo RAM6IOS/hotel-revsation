@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import Ditel from "./ditel";
-import { FaCocktail } from "react-icons/fa";
 
 import "./Servesstyle.css";
 
 function serves(props) {
-    //const [students, setStudents] = useState('ram');
+    
 
     return (
         <div className="bakyard">

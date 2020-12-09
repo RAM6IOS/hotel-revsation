@@ -1,24 +1,8 @@
-import React, { useContext } from "react";
+import React from "react";
 import Heroroms from "../Compnent/heroroms";
-import { ditlesroom } from "../Data";
-import "../App.css"
-import {
-    BrowserRouter as Router,
-    Route,
-    Link,
-    Switch,
-    Redirect,
-    useLocation,
-} from "react-router-dom";
-import { Card, Avatar } from "antd";
-import {
-    EditOutlined,
-    EllipsisOutlined,
-    SettingOutlined,
-} from "@ant-design/icons";
-import Cards from "../Compnent/card"
+import "../App.css";
 
-const { Meta } = Card;
+import Cards from "../Compnent/card";
 
 function Romse() {
     return (
@@ -26,8 +10,7 @@ function Romse() {
             <div>
                 <Heroroms />
             </div>
-            <Cards/>
-
+            <Cards />
         </>
     );
 }

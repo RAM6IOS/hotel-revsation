@@ -1,9 +1,13 @@
-import React ,{useState} from "react";
-import Ditles from "../Data";
+import React, { useEffect, useState } from "react";
 import "./Servesstyle.css";
 import { Link } from "react-router-dom";
-
+import { roomsData } from "../data/data";
 function BestRoms() {
+    const [data, setData] = useState();
+    useEffect(() => {
+        const results = roomsData.filter((i) => i.displayAtHomePage);
+        setData(results);
+    }, []);
     return (
         <>
             <div>
@@ -11,27 +15,30 @@ function BestRoms() {
 
                 <div className="container">
                     <div className="row">
-                        {Ditles.map((ditl, index) => (
+
+                        {data?.map((data, index) => (
                             <div
                                 class="card col-sm-12 "
-                                style={{ width: "" }}
+                                style={{
+                                    width: "",
+                                    display: data.displayAtHomePage
+                                        ? ""
+                                        : "none",
+                                }}
                                 key={index}
                             >
                                 <img
                                     class="card-img-top"
-                                    src={ditl.imgs}
-                                    alt="Card image"
+                                    src={data.carouselImages[0].src}
+                                    alt={data.carouselImages[0].src}
                                     style={{ width: "100%" }}
                                 />
                                 <div class="card-body">
-                        <h4 class="card-title">{ditl.title}</h4>
+                                    <h4 class="card-title">{data.title}</h4>
 
-                                    <Link to={ditl.to}>
-                                        <a
-                                            href="#"
-                                            class="btn btn-primary btns"
-                                        >
-                                            Ditls
+                                    <Link to={`/rooms/${data.name}`}>
+                                        <a class="btn btn-primary btns">
+                                            Details
                                         </a>
                                     </Link>
                                 </div>
