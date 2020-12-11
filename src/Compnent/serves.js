@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Ditel from "./ditel";
+import Ditel from "./ditel-for-serves";
 
 import "./Servesstyle.css";
 
 function serves(props) {
-    
+
 
     return (
         <div className="bakyard">

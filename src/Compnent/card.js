@@ -18,11 +18,12 @@ export default function card() {
                                     <img
                                         alt={room.carouselImages.alt}
                                         src={room.carouselImages[0].src}
+                                        className="imgsiz"
                                     />
                                 }
                             >
                                 <Meta />
-                                <h5>{room.tittle}</h5>
+                                <h5>{room.title}</h5>
 
                                 <button className="but">
                                     {" "}

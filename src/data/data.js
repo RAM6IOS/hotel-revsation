@@ -21,7 +21,7 @@ export const roomsData = [
             },
         ],
         details: {
-            smoking: false,
+            smoking: true,
             parking:
                 "Private parking is possible on site (reservation is not needed) and costs RUB 4,000 per day.",
             size: "42",
