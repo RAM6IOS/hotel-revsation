@@ -1,22 +1,22 @@
-import React, { useContext } from "react";
+import React, { useContext , useState } from "react";
 
-import Hero from "../Compnent/hero";
+import Hero from "../Compnent/allroom";
 import Heroerror from "../Compnent/heroerror";
 import "../Compnent/Navber.css";
 import Serves from "../Compnent/serves.js";
 
-import UserContext from "./UesrContext";
-import Ditles from "../Compnent/bestRoms";
+
+import Ditles from "../Compnent/luxuRoms";
 
 function Home() {
-    const value = useContext(UserContext);
-
     return (
         <>
             <Hero></Hero>
             <Serves tetls={"Servees"} />
 
             <Ditles />
+
+
         </>
     );
 }

@@ -1,0 +1,54 @@
+.bor{
+  border: black solid 2px;
+
+}
+.row{
+  padding-top: 10px;
+}
+.bakyard h3 {
+
+  padding: 3px;
+  padding-top: 6px;
+
+  letter-spacing: 4px;
+  font-size: 40px;
+  border-bottom: 5px solid rgb(192, 170, 114);
+  margin-left: 30%;
+  margin-right: 30%;
+}
+.bakyard button{
+  background-color: black;
+  color: rgb(236, 233, 228);
+
+
+  border-radius: 5px;
+  width: 140px;
+  height: 50px;
+  font-size: 30px;
+  align-items: center;
+  padding-bottom: 3px;
+}
+.bakyard button:hover{
+  background-color: white;
+  color: black;
+}
+.bakyard strong{
+  font-weight: 7000;
+  font-size: 20px;
+}
+.imgroom {
+  width: 200px;
+}
+li{
+  list-style: none;
+}
+.padeng{
+  padding: 15px;
+}
+.imagesizi{
+  width: 200px;
+}
+.imgsizi{
+  width: 200px;
+  height: 200px;
+}
